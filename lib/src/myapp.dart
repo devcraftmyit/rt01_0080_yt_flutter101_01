@@ -15,17 +15,29 @@ class MyApp extends StatelessWidget {
                 ),
             ),
         ),
-        body: const Center(
-              child: DecoratedBox(
-              decoration: BoxDecoration(color: Colors.blue
+        body: Center(
+              child:  Column(
+                mainAxisAlignment: MainAxisAlignment.center,  
+                children: const [
+                  DecoratedBox(
+                    decoration: BoxDecoration(color: Colors.blue
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text('Rocky'),
+                    )
+                  ),
+                  SizedBox(height: 10.0,),
+                  DecoratedBox(
+                    decoration: BoxDecoration(color: Colors.blue
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text('Spinner'),
+                    )
+                  )
+                ],
               ),
-              child:  Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Text(
-                  'Rocky',
-                ),
-              )
-          ),
         ),
       )
     );
